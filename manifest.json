@@ -1,0 +1,12 @@
+{
+  "name": "CF Docs External Link Remover",
+  "description": "",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://developers.cloudflare.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
