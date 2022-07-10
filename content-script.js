@@ -1,10 +1,8 @@
 function removeExternalIcons() {
   const icons = document.getElementsByClassName("DocsMarkdown--link-external-icon");
-  for (const icon of icons) {
-    icon.remove();
+  while(icons.length !== 0) {
+    icons.item(0).remove();
   }
 }
 
-window.addEventListener('load', (event) => {
-  removeExternalIcons();
-});
+removeExternalIcons();
